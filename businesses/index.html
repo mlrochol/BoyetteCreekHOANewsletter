@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neighbor Business Directory — Boyette Creek HOA</title>
+<meta name="description" content="A directory of businesses owned by Boyette Creek residents in Riverview, Florida.">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --teal:       #1A7A6E;
+  --teal-mid:   #2DAA97;
+  --teal-light: #EAF5F3;
+  --teal-pale:  #F2FAF9;
+  --gold:       #C9A84C;
+  --gold-light: #F7F0DC;
+  --ink:        #1C1C1C;
+  --ink-mid:    #444;
+  --ink-light:  #777;
+  --serif:      'Playfair Display', Georgia, serif;
+  --sans:       'DM Sans', Arial, sans-serif;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: var(--sans);
+  background: #FAFAF8;
+  color: var(--ink);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+a:focus-visible, input:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 2px;
+}
+
+/* ── HERO ── */
+.hero {
+  background: var(--teal);
+  color: #fff;
+  padding: 60px 24px 50px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -80px; right: -80px;
+  width: 260px; height: 260px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.06);
+}
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: -120px; left: -60px;
+  width: 220px; height: 220px;
+  border-radius: 50%;
+  background: rgba(201,168,76,0.08);
+}
+.hero-inner { max-width: 800px; margin: 0 auto; position: relative; z-index: 1; }
+.hero-eyebrow {
+  font-size: 11px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.6);
+  margin-bottom: 14px;
+  font-weight: 500;
+}
+.hero h1 {
+  font-family: var(--serif);
+  font-size: clamp(38px, 6.4vw, 64px);
+  font-weight: 900;
+  letter-spacing: -1px;
+  line-height: 1.02;
+}
+.hero h1 span { color: var(--gold); }
+.hero-rule {
+  width: 60px; height: 3px;
+  background: var(--gold);
+  margin: 20px auto;
+  border-radius: 2px;
+}
+.hero-sub {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: clamp(16px, 2.2vw, 20px);
+  color: rgba(255,255,255,0.9);
+}
+.hero-back {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: rgba(255,255,255,0.75);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  padding-bottom: 2px;
+}
+.hero-back:hover { color: #fff; border-color: var(--gold); }
+
+/* ── CONTENT ── */
+.content { max-width: 860px; margin: 0 auto; padding: 44px 24px 40px; }
+
+.intro {
+  background: var(--teal-pale);
+  border-left: 4px solid var(--teal-mid);
+  border-radius: 0 10px 10px 0;
+  padding: 20px 24px;
+  font-size: 15px;
+  color: var(--ink-mid);
+  margin-bottom: 30px;
+}
+.intro strong { color: var(--teal); }
+
+.searchwrap { margin-bottom: 32px; }
+.search {
+  width: 100%;
+  font-family: var(--sans);
+  font-size: 15px;
+  padding: 13px 16px;
+  border: 1px solid #DCE6E3;
+  border-radius: 10px;
+  background: #fff;
+  color: var(--ink);
+}
+.search::placeholder { color: #9AA6A3; }
+.count {
+  margin-top: 8px;
+  font-size: 12.5px;
+  color: var(--ink-light);
+}
+
+.section-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 18px;
+}
+.section-label-text {
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--teal);
+  font-weight: 700;
+  white-space: nowrap;
+}
+.section-label-line { flex: 1; height: 1px; background: var(--teal); opacity: 0.25; }
+
+.group { margin-bottom: 38px; }
+
+.card {
+  background: #fff;
+  border: 1px solid #E8EEE9;
+  border-radius: 12px;
+  padding: 24px 26px;
+  margin-bottom: 16px;
+}
+.card-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 4px;
+}
+.biz-name {
+  font-family: var(--serif);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.badge {
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #7A6220;
+  background: var(--gold-light);
+  border: 1px solid #E8DCB4;
+  border-radius: 20px;
+  padding: 3px 10px;
+}
+.owner {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 14px;
+  color: var(--gold);
+  margin-bottom: 10px;
+}
+.what { font-size: 15px; color: var(--ink-mid); margin-bottom: 14px; }
+.deal {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 500;
+  color: #7A6220;
+  background: var(--gold-light);
+  border-left: 3px solid var(--gold);
+  border-radius: 0 6px 6px 0;
+  padding: 7px 12px;
+  margin: -4px 0 14px;
+}
+.deal strong { font-weight: 700; }
+.contact { display: flex; flex-wrap: wrap; gap: 10px; }
+.contact a {
+  font-size: 13.5px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 8px;
+}
+.contact .btn-primary { background: var(--teal); color: #fff; }
+.contact .btn-primary:hover { background: #155F55; }
+.contact .btn-secondary { background: var(--teal-light); color: var(--teal); }
+.contact .btn-secondary:hover { background: #D8ECE8; }
+
+.empty {
+  background: var(--teal-pale);
+  border: 1px dashed #B8D8D3;
+  border-radius: 10px;
+  padding: 26px 24px;
+  text-align: center;
+  color: var(--teal);
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 15px;
+}
+
+.cta {
+  background: #fff;
+  border: 1px solid #E8EEE9;
+  border-radius: 12px;
+  padding: 28px 26px;
+  text-align: center;
+}
+.cta h2 {
+  font-family: var(--serif);
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.cta p { font-size: 15px; color: var(--ink-mid); margin-bottom: 18px; }
+.cta a {
+  display: inline-block;
+  background: var(--gold);
+  color: #1C1C1C;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  padding: 12px 26px;
+  border-radius: 8px;
+}
+.cta a:hover { background: #B99537; }
+
+.disclaimer {
+  margin-top: 28px;
+  font-size: 12.5px;
+  color: var(--ink-light);
+  line-height: 1.65;
+  text-align: center;
+}
+
+/* ── FOOTER ── */
+.footer {
+  background: var(--ink);
+  color: rgba(255,255,255,0.7);
+  text-align: center;
+  padding: 32px 24px;
+  font-size: 12px;
+  line-height: 1.7;
+}
+.footer a { color: var(--gold); text-decoration: none; }
+.footer a:hover { text-decoration: underline; }
+.footer-gold {
+  color: var(--gold);
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+@media (max-width: 520px) {
+  .hero { padding: 44px 20px 38px; }
+  .content { padding: 32px 20px 30px; }
+  .card { padding: 20px 20px; }
+  .contact a { flex: 1 1 auto; text-align: center; }
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="hero-eyebrow">Boyette Creek Homeowners Association</div>
+    <h1>Neighbor <span>Business</span> Directory</h1>
+    <div class="hero-rule"></div>
+    <div class="hero-sub">Hire a neighbor. Keep it in the Creek.</div>
+    <a class="hero-back" href="../">Back to the Buzz</a>
+  </div>
+</header>
+
+<main class="content">
+
+  <div class="intro">
+    Boyette Creek is home to <strong>556 families</strong> — and a growing number of them run
+    businesses right here in the neighborhood. Every listing below comes from a resident who
+    asked to be included. Give them a look before you call a stranger.
+  </div>
+
+  <div class="searchwrap">
+    <label for="search" class="sr-only" style="position:absolute;left:-9999px;">Search businesses</label>
+    <input id="search" class="search" type="search" placeholder="Search by name, service, or category…">
+    <div class="count" id="count"></div>
+  </div>
+
+  <div id="listings"></div>
+
+  <!-- ════════════════════════════════════════════════════════════════
+       ADD A BUSINESS
+       The href below is the Tally form. Update it here if the form
+       link ever changes.
+       ════════════════════════════════════════════════════════════════ -->
+  <div class="cta">
+    <h2>Run a business in Boyette Creek?</h2>
+    <p>Residents can be listed here at no cost. Takes about two minutes.</p>
+    <a href="https://tally.so/r/2E6k1D" target="_blank" rel="noopener">Add your business</a>
+  </div>
+
+  <p class="disclaimer">
+    The Boyette Creek HOA provides this directory as a courtesy to residents. Listings are
+    submitted by the business owners themselves. The Association does not verify credentials,
+    endorse any business, or take part in transactions between neighbors. Please do your own
+    due diligence — including confirming licensing and insurance — before hiring.
+  </p>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-gold">Published by the Boyette Creek HOA</div>
+  <a href="https://boyettecreekhoa.com">boyettecreekhoa.com</a> &nbsp;·&nbsp; Riverview, FL 33569<br>
+  Questions about a listing? Contact a board member.
+</footer>
+
+<script>
+/* ══════════════════════════════════════════════════════════════════════
+   BUSINESS LIST — this is the only part you need to edit.
+
+   To add a neighbor, copy one { ... } block, paste it below the last one,
+   and fill in the fields. Keep the commas between blocks.
+
+   Only include neighbors who answered "Yes, publish it" on the form.
+   Never add house numbers, streets, or personal email addresses here —
+   this page is public to the whole internet.
+
+   category   — use one of the labels from the form
+   licensed   — true or false  (true shows the gold "Licensed & Insured" badge)
+   phone       — leave as "" if they'd rather not list one
+   email       — only if they gave it as their contact, not just for follow-up
+   deal        — a concrete neighbor discount/offer, or "" if none
+   website     — leave as "" if they don't have one
+   websiteLabel— optional button text, e.g. "Book online". Defaults to
+                 "Visit website" when left blank.
+   contactOrder— optional, e.g. ["website","email","phone"]. Sets which
+                 contact becomes the big teal button. Leave it out to use
+                 the default order: phone, email, website, social.
+   social      — Facebook/Instagram link, or "" if none
+   socialLabel — "Instagram", "Facebook", etc. Shown on the button.
+
+   The first contact listed becomes the big teal button, so a business
+   with no phone still gets a clear way to reach them.
+   ══════════════════════════════════════════════════════════════════════ */
+const BUSINESSES = [
+  {
+    business: "Barrios Notary and Tax",
+    owner:    "Tim Barrios",
+    category: "Professional Services",
+    what:     "Notary and tax preparation — English and Spanish.",
+    phone:    "813.807.9738",
+    website:  "https://barriosnotary.com/",
+    social:   "",
+    socialLabel: "",
+    licensed: true
+  },
+  {
+    business: "Sugar Lees Gourmet Coffee Service",
+    owner:    "Lolita Lee",
+    category: "Food & Catering",
+    what:     "Your go-to mobile coffee, tea, and hot chocolate bar for all of your events.",
+    phone:    "",
+    website:  "https://www.sugarleescafe.com",
+    social:   "https://www.instagram.com/sugarleescafe",
+    socialLabel: "Instagram",
+    licensed: true
+  },
+  {
+    business: "Southeast Painting and Associates",
+    owner:    "Patrick Armato",
+    category: "Home & Yard Services",
+    what:     "Interior and exterior painting, plus epoxy flooring.",
+    phone:    "813.318.2004",
+    website:  "https://sepaintingandassoc.com/",
+    social:   "",
+    socialLabel: "",
+    licensed: true
+  },
+  {
+    business: "PatheticBarrel Productions",
+    owner:    "Heath O'Donnell",
+    category: "Creative & Events",
+    what:     "Professional game master offering collaborative entertainment and team building.",
+    phone:    "",
+    email:    "patheticbarrel+BoyetteCreek@gmail.com",
+    website:  "",
+    social:   "",
+    socialLabel: "",
+    licensed: false
+  },
+  {
+    business: "Mortgages",
+    owner:    "Kaio Cardozo",
+    category: "Professional Services",
+    what:     "Mortgage expert for home loans, refinancing, and smarter financing.",
+    phone:    "973.558.0288",
+    email:    "",
+    deal:     "",
+    website:  "",
+    social:   "",
+    socialLabel: "",
+    licensed: true
+  },
+  {
+    business: "Monovium LLC",
+    owner:    "Alisha Buissereth",
+    category: "Other",
+    what:     "Hair braiding.",
+    phone:    "813.540.1535",
+    email:    "",
+    deal:     "",
+    website:  "https://sstyledbyshaa.as.me",
+    websiteLabel: "Book online",
+    social:   "",
+    socialLabel: "",
+    licensed: false
+  },
+  {
+    business: "Energize Paws, Independent pawTree Pet Pro",
+    owner:    "Miranda Rochol",
+    category: "Pet Services",
+    what:     "All-natural pet nutrition — food, treats, supplements, and more.",
+    phone:    "262.770.5345",
+    email:    "energizepaws@gmail.com",
+    deal:     "New customers get 20% off with code INTRO4U20.",
+    website:  "https://pawtree.com/energizepaws",
+    websiteLabel: "Shop online",
+    contactOrder: ["website", "email", "phone"],
+    social:   "",
+    socialLabel: "",
+    licensed: false
+  }
+];
+
+/* ── Rendering — no need to edit below this line ── */
+const CATEGORY_ORDER = [
+  "Home & Yard Services",
+  "Professional Services",
+  "Health & Wellness",
+  "Food & Catering",
+  "Pet Services",
+  "Childcare & Education",
+  "Creative & Events",
+  "Retail & Handmade",
+  "Automotive",
+  "Other"
+];
+
+const esc = s => String(s).replace(/[&<>"']/g, c =>
+  ({ "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;" }[c]));
+
+function cardHTML(b) {
+  const tel = b.phone ? b.phone.replace(/[^0-9]/g, "") : "";
+  const parts = {
+    phone:   b.phone   ? [`tel:+1${tel}`, `Call ${esc(b.phone)}`, true] : null,
+    email:   b.email   ? [`mailto:${esc(b.email)}`, "Email", true] : null,
+    website: b.website ? [esc(b.website), b.websiteLabel ? esc(b.websiteLabel) : "Visit website", false] : null,
+    social:  b.social  ? [esc(b.social), b.socialLabel ? `See on ${esc(b.socialLabel)}` : "See social page", false] : null
+  };
+  const DEFAULT_ORDER = ["phone", "email", "website", "social"];
+  const wanted = Array.isArray(b.contactOrder) ? b.contactOrder : [];
+  const order = [...wanted, ...DEFAULT_ORDER.filter(k => !wanted.includes(k))];
+  const links = order.map(k => parts[k]).filter(Boolean);
+  const buttons = links.map(([href, label, sameTab], i) =>
+    `<a class="${i === 0 ? "btn-primary" : "btn-secondary"}" href="${href}"` +
+    `${sameTab ? "" : ' target="_blank" rel="noopener"'}>${label}</a>`
+  ).join("");
+  return `
+    <article class="card">
+      <div class="card-top">
+        <h3 class="biz-name">${esc(b.business)}</h3>
+        ${b.licensed ? '<span class="badge">Licensed &amp; Insured</span>' : ""}
+      </div>
+      <div class="owner">${esc(b.owner)}</div>
+      <p class="what">${esc(b.what)}</p>
+      ${b.deal ? `<div class="deal"><strong>Neighbor offer:</strong> ${esc(b.deal)}</div>` : ""}
+      <div class="contact">${buttons}</div>
+    </article>`;
+}
+
+function render(filter) {
+  const q = (filter || "").trim().toLowerCase();
+  const matches = BUSINESSES.filter(b =>
+    !q || [b.business, b.owner, b.category, b.what].join(" ").toLowerCase().includes(q));
+
+  const listings = document.getElementById("listings");
+  const count = document.getElementById("count");
+
+  if (!BUSINESSES.length) {
+    listings.innerHTML = `<div class="empty">The directory is just getting started —
+      be the first neighbor to add a business below!</div>`;
+    count.textContent = "";
+    return;
+  }
+
+  if (!matches.length) {
+    listings.innerHTML = `<div class="empty">No businesses match that search yet.
+      Try a broader word, or clear the box to see everyone.</div>`;
+    count.textContent = "";
+    return;
+  }
+
+  const cats = [...new Set(matches.map(b => b.category))].sort((a, b) => {
+    const ia = CATEGORY_ORDER.indexOf(a), ib = CATEGORY_ORDER.indexOf(b);
+    return (ia < 0 ? 99 : ia) - (ib < 0 ? 99 : ib) || a.localeCompare(b);
+  });
+
+  listings.innerHTML = cats.map(cat => `
+    <section class="group">
+      <div class="section-label">
+        <span class="section-label-text">${esc(cat)}</span>
+        <span class="section-label-line"></span>
+      </div>
+      ${matches.filter(b => b.category === cat)
+               .sort((a, b) => a.business.localeCompare(b.business))
+               .map(cardHTML).join("")}
+    </section>`).join("");
+
+  const n = matches.length;
+  count.textContent = q
+    ? `${n} of ${BUSINESSES.length} listing${BUSINESSES.length === 1 ? "" : "s"}`
+    : `${n} neighbor business${n === 1 ? "" : "es"} listed`;
+}
+
+document.getElementById("search").addEventListener("input", e => render(e.target.value));
+render("");
+</script>
+
+</body>
+</html>
