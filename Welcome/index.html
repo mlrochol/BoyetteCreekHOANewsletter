@@ -1,0 +1,1029 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Welcome to Boyette Creek</title>
+<meta name="description" content="New-resident guide for Boyette Creek, Riverview FL: the rules, the contacts and the little things that make it home.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+/* ---------- printed-panel styles (shared with the PDF) ---------- */
+
+:root{--teal:#1A7A6E;--teal-mid:#2DAA97;--teal-light:#EAF5F3;--teal-pale:#F2FAF9;--gold:#C9A84C;--gold-light:#F7F0DC;--gold-pale:#FAF6EC;--ink:#1C1C1C;--char:#1A1A1C;}
+
+*{box-sizing:border-box;margin:0;padding:0}
+
+
+
+.panel{height:8.5in;padding:.36in .32in .3in;position:relative;display:flex;flex-direction:column}
+.w-std{width:3.6875in}.w-flap{width:3.625in}
+h2{font-family:'Playfair Display',Lora,Georgia,serif;color:var(--teal);font-size:19pt;line-height:1.1;margin-bottom:.06in}
+h3{font-family:'DM Sans',Poppins,Arial,sans-serif;font-size:8.6pt;letter-spacing:.12em;text-transform:uppercase;color:var(--teal);margin:.13in 0 .04in;font-weight:700}
+.rule{height:2px;background:var(--gold);width:.6in;margin:.04in 0 .1in}
+p,li{font-size:8.6pt;line-height:1.38}
+ul{list-style:none}
+li{position:relative;padding-left:.15in;margin-bottom:.045in}
+li::before{content:"";position:absolute;left:.02in;top:.065in;width:.055in;height:.055in;border-radius:50%;background:var(--gold)}
+b{font-weight:700}
+.cite{font-size:6.6pt;color:#6b6b6b;letter-spacing:.02em}
+.callout{background:var(--gold-pale);border-left:3px solid var(--gold);padding:.08in .1in;margin:.08in 0;border-radius:0 4px 4px 0}
+.callout p,.callout li{font-size:8.3pt}
+.tealbox{background:var(--teal-pale);border:1px solid #cfe7e2;border-radius:6px;padding:.09in .11in;margin:.07in 0}
+.spacer{flex:1}
+
+/* cover */
+.cover{background:var(--char);color:#fff;align-items:center;text-align:center;justify-content:space-between;padding:.5in .35in .38in}
+.cover .logo{width:2.25in;height:2.25in;margin-top:.15in}
+.cover h1{font-family:'Playfair Display',Lora,Georgia,serif;font-weight:600;font-style:italic;font-size:30pt;line-height:1.05;color:#fff}
+.cover h1 span{display:block;color:var(--gold);font-style:normal;font-size:12pt;letter-spacing:.28em;text-transform:uppercase;font-family:'DM Sans',Poppins,Arial,sans-serif;font-weight:500;margin-bottom:.1in}
+.cover .sub{color:#d9d4c3;font-size:10pt;line-height:1.45;margin-top:.14in}
+.cover .goldline{width:1.1in;height:2px;background:var(--gold);margin:.18in auto 0}
+.cover .foot{font-size:7.4pt;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+
+/* flap */
+.check li{padding-left:.22in}
+.check li::before{width:.11in;height:.11in;border-radius:2px;background:none;border:1.3px solid var(--teal);top:.03in}
+
+/* contacts */
+.contacts{width:100%;border-collapse:collapse;margin-top:.04in}
+.contacts td{font-size:7.9pt;line-height:1.28;padding:.045in 0;border-bottom:1px solid #e6e1d2;vertical-align:top}
+.contacts td.n{white-space:nowrap;text-align:right;font-weight:700;color:var(--teal);padding-left:.08in}
+.contacts .what{display:block;color:#5c5c5c;font-size:7pt}
+.qrrow{display:flex;justify-content:space-between;gap:.08in;margin-top:.1in}
+.qr{width:1in;text-align:center}
+.qr svg{width:.86in;height:.86in;display:block;margin:0 auto .03in}
+.qr .l{font-size:7pt;font-weight:700;color:var(--teal);line-height:1.15}
+.qr .u{font-size:6.1pt;color:#666;line-height:1.2}
+.tealbox .qr svg{width:.72in;height:.72in}
+.disclaimer{font-size:6.6pt;color:#666;line-height:1.35;border-top:1px solid #e6e1d2;padding-top:.07in;margin-top:.1in}
+
+/* inside */
+.band{margin:-.36in -.32in .16in;padding:.2in .32in .14in;background:var(--teal);color:#fff}
+.band h2{color:#fff;margin:0}
+.band .k{font-size:7.2pt;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-light);margin-bottom:.03in}
+.big2{display:flex;gap:.07in;margin:.02in 0 .04in}
+.big2 div{flex:1;background:var(--gold-light);border-radius:5px;padding:.07in .08in;font-size:7.8pt;line-height:1.3}
+.big2 div b{display:block;color:var(--teal);font-size:8.4pt;margin-bottom:.02in}
+
+.w-flap{width:3.6875in}
+.face>.panel:not(.cover){background:#fff}
+
+/* ---------- flip viewer ---------- */
+html,body{height:100%}
+body{margin:0;background:#EFEBE1;color:var(--ink);font-family:'DM Sans',Poppins,Arial,sans-serif;display:flex;flex-direction:column;min-height:100vh;overflow-x:hidden}
+header.top{background:var(--char);color:#fff;padding:12px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+header.top .t{font-family:'Playfair Display',Lora,Georgia,serif;font-style:italic;font-size:20px}
+header.top .t span{color:var(--gold)}
+header.top a{color:var(--gold);font-size:13px;text-decoration:none;border:1px solid rgba(201,168,76,.5);padding:6px 10px;border-radius:999px;white-space:nowrap}
+header.top a:hover{background:rgba(201,168,76,.12)}
+#stage{flex:1;position:relative;perspective:2800px;overflow:hidden;min-height:320px}
+#book{position:absolute;left:50%;top:50%;width:3.6875in;height:8.5in;transform-style:preserve-3d;transition:transform .9s cubic-bezier(.4,.1,.2,1)}
+.part{position:absolute;inset:0;transform-style:preserve-3d;transition:transform .9s cubic-bezier(.4,.1,.2,1)}
+.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;overflow:hidden;box-shadow:0 1px 2px rgba(0,0,0,.12),0 10px 30px rgba(0,0,0,.14);cursor:zoom-in}
+.face.rev{transform:rotateY(180deg)}
+#base .face.rev{transform:rotateY(180deg) translateZ(1px)}
+#cover{transform-origin:left center;transform:translateZ(3px)}
+#flap{transform-origin:right center;transform:translateZ(1.5px)}
+body.s-open1 #cover,body.s-open2 #cover{transform:translateZ(3px) rotateY(-180deg)}
+body.s-open2 #flap{transform:translateZ(1.5px) rotateY(180deg)}
+body.s-closed .face{cursor:pointer}
+/* fold shading so the closed stack reads as paper */
+#flap .face:not(.rev)::after,#cover .face.rev::after{content:"";position:absolute;inset:0;pointer-events:none}
+#cover .face.rev::after{background:linear-gradient(to left,rgba(0,0,0,.07),transparent 12%)}
+
+nav.ctl{display:flex;align-items:center;justify-content:center;gap:10px;padding:10px 16px 6px;flex-wrap:wrap}
+nav.ctl button{font:inherit;font-size:14px;border:0;border-radius:999px;padding:9px 16px;cursor:pointer;background:var(--teal);color:#fff;min-width:44px;min-height:40px}
+nav.ctl button:disabled{opacity:.35;cursor:default}
+nav.ctl button:focus-visible,.tabs button:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;justify-content:center}
+.ctl .tabs button{background:#fff;color:var(--teal);border:1px solid #cfe1dc;font-size:13px;padding:7px 12px}
+.ctl .tabs button[aria-current="true"]{background:var(--teal-light);border-color:var(--teal);font-weight:700}
+p.hint{text-align:center;font-size:12.5px;color:#666;margin:2px 16px 12px}
+
+/* zoom overlay */
+#zoom{position:fixed;inset:0;background:rgba(20,20,22,.82);display:none;align-items:flex-start;justify-content:center;overflow-y:auto;z-index:10;padding:56px 16px 24px}
+#zoom.on{display:flex}
+#zoom .wrap{position:relative;flex:none;box-shadow:0 20px 60px rgba(0,0,0,.4)}
+#zoom .wrap > .panel{transform-origin:top left;position:absolute;top:0;left:0}
+#zoom .panel:not(.cover){background:#fff}
+#zoom .x{position:fixed;top:12px;right:16px;font:inherit;font-size:14px;background:#fff;color:var(--ink);border:0;border-radius:999px;padding:8px 14px;cursor:pointer}
+@media (prefers-reduced-motion:reduce){#book,.part{transition:none}}
+@media (max-width:560px){header.top .t{font-size:17px}nav.ctl{gap:6px;padding:8px 8px 4px}#prev,#next{display:none}.tabs{flex-wrap:nowrap}.ctl .tabs button{font-size:12.5px;padding:7px 10px;min-height:36px;white-space:nowrap}}
+</style>
+</head>
+<body class="s-closed">
+<header class="top">
+  <div class="t">Welcome to <span>Boyette Creek</span></div>
+  <a href="BoyetteCreek_Welcome_Trifold.pdf" download>Printable PDF</a>
+</header>
+
+<main id="stage" aria-live="polite">
+  <div id="book">
+    <div class="part" id="base">
+      <div class="face" data-label="Parking &amp; trash"><div class="panel w-std">
+<div class="band"><div class="k">The two we hear about most</div><h2>Parking &amp; trash</h2></div>
+<div class="big2">
+<div><b>Park on pavement</b>Vehicles go in the garage or on the paved driveway, and <u>never</u> on the grass.</div>
+<div><b>Pickup days</b>Garbage: <b style="display:inline;font-size:7.8pt;color:var(--ink)">Tue &amp; Fri</b><br/>Recycling &amp; yard waste: <b style="display:inline;font-size:7.8pt;color:var(--ink)">Tue</b></div>
+</div>
+<h3>Vehicles</h3>
+<ul>
+<li>Boats, trailers, campers and RVs must be kept inside the garage.</li>
+<li>A vehicle that doesn't run can't stay outside more than 48 hours unless it's out of view.</li>
+<li>Our streets are <b>county roads</b>, so street parking is handled by the Sheriff's Office, not the HOA. Please keep sidewalks, mailboxes and driveways clear.</li>
+</ul>
+<h3>Trash &amp; bulk items</h3>
+<p class="cite" style="margin:-.02in 0 .05in">Days set by the county and occasionally changed. Confirm at HCFLGov.net/Trash.</p>
+<ul>
+<li>Put cans at the curb <b>no earlier than the evening before</b> pickup, and bring them back <b>by the evening of</b> pickup day.</li>
+<li>Between pickups, keep cans out of sight in the garage or behind ARB-approved screening.</li>
+<li><b>Bulky items</b> (furniture, mattresses, appliances): call County Solid Waste at <b>(813) 272-5680</b> to schedule a pickup <i>before</i> anything goes to the curb. A per-item fee applies. You can also haul items to a county drop-off site yourself.</li>
+</ul>
+<div class="spacer"></div>
+<p class="cite">Declaration Art. IX §§5, 7, 22 · Community Information Sheet · County Solid Waste</p>
+</div></div>
+      <div class="face rev" data-label="Who to call"><div class="panel w-std" style="background:#fff">
+<h2>Who to call</h2>
+<div class="rule"></div>
+<table class="contacts">
+<tr><td><b>McNeil Management Services</b><span class="what">Dues, ARB applications, enforcement requests, portal · management@mcneilmsi.com</span></td><td class="n">(813) 571-7100</td></tr>
+<tr><td><b>County Solid Waste</b><span class="what">Pickup days, bulky-item pickup</span></td><td class="n">(813) 272-5680</td></tr>
+<tr><td><b>County Code Enforcement</b><span class="what">Debris or piles left at the curb</span></td><td class="n">(813) 274-6600</td></tr>
+<tr><td><b>Sheriff (non-emergency)</b><span class="what">Street parking, active disturbances</span></td><td class="n">(813) 247-8200</td></tr>
+<tr><td><b>EPC of Hillsborough County</b><span class="what">Formal noise complaints</span></td><td class="n">(813) 627-2600</td></tr>
+<tr><td><b>Creative Mailboxes</b><span class="what">Mailbox repair or replacement</span></td><td class="n">(813) 818-7100</td></tr>
+<tr><td><b>Emergencies</b><span class="what">Fire, medical, crime in progress</span></td><td class="n">911</td></tr>
+</table>
+<h3 style="margin-top:.16in">Scan to connect</h3>
+<div class="qrrow">
+<div class="qr"><svg fill-rule="evenodd" height="90.70866141732284" preserveaspectratio="xMinYMin meet" version="1.0" viewbox="0 0 90 90" width="90.70866141732284" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<clippath id="clip">
+<rect height="90.70866141732284" width="90.70866141732284" x="0" y="0"></rect>
+</clippath>
+<g id="group" style="clip-path: url(#clip)" transform="scale(1,-1) translate(0,-90)">
+<g transform="">
+<g transform="">
+<rect height="90.70866141732284" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: none; fill-rule: evenodd;" width="90.70866141732284" x="0" y="0"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="19.241231209735147" x="10.994989262705799" y="76.96492483894059"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="32.984967788117395" y="76.96492483894059"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="13.743736578382247" x="43.979957050823195" y="76.96492483894059"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="19.241231209735147" x="60.472440944881896" y="76.96492483894059"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="10.994989262705799" y="74.21617752326415"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="27.487473156764498" y="74.21617752326415"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="32.984967788117395" y="74.21617752326415"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="46.72870436649964" y="74.21617752326415"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="60.472440944881896" y="74.21617752326415"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764537" x="76.96492483894059" y="74.21617752326415"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="10.994989262705799" y="71.4674302075877"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.24624194702935" x="16.492483894058697" y="71.4674302075877"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="27.487473156764498" y="71.4674302075877"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="32.984967788117395" y="71.4674302075877"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313529" x="38.482462419470295" y="71.4674302075877"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="49.477451682176095" y="71.4674302075877"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="54.974946313528996" y="71.4674302075877"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="60.472440944881896" y="71.4674302075877"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="65.96993557623479" y="71.4674302075877"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764537" x="76.96492483894059" y="71.4674302075877"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="10.994989262705799" y="68.71868289191124"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.24624194702935" x="16.492483894058697" y="68.71868289191124"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="27.487473156764498" y="68.71868289191124"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313529" x="32.984967788117395" y="68.71868289191124"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="41.23120973514675" y="68.71868289191124"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="46.72870436649964" y="68.71868289191124"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="60.472440944881896" y="68.71868289191124"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="65.96993557623479" y="68.71868289191124"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764537" x="76.96492483894059" y="68.71868289191124"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="10.994989262705799" y="65.9699355762348"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.24624194702935" x="16.492483894058697" y="65.9699355762348"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="27.487473156764498" y="65.9699355762348"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="10.9949892627058" x="46.72870436649964" y="65.9699355762348"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="60.472440944881896" y="65.9699355762348"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="65.96993557623479" y="65.9699355762348"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764537" x="76.96492483894059" y="65.9699355762348"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="10.994989262705799" y="63.22118826055835"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="27.487473156764498" y="63.22118826055835"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="32.984967788117395" y="63.22118826055835"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="41.23120973514675" y="63.22118826055835"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="54.974946313528996" y="63.22118826055835"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="60.472440944881896" y="63.22118826055835"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764537" x="76.96492483894059" y="63.22118826055835"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="19.241231209735147" x="10.994989262705799" y="60.472440944881896"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="32.984967788117395" y="60.472440944881896"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="38.482462419470295" y="60.472440944881896"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="43.979957050823195" y="60.472440944881896"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="49.477451682176095" y="60.472440944881896"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="54.974946313528996" y="60.472440944881896"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="19.241231209735147" x="60.472440944881896" y="60.472440944881896"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="35.73371510379385" y="57.72369362920545"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="43.979957050823195" y="57.72369362920545"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="49.477451682176095" y="57.72369362920545"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="54.974946313528996" y="57.72369362920545"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313528985" x="10.994989262705799" y="54.974946313528996"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.24624194702935" x="21.989978525411598" y="54.974946313528996"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313529" x="41.23120973514675" y="54.974946313528996"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="63.22118826055834" y="54.974946313528996"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="10.9949892627058" x="68.71868289191124" y="54.974946313528996"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="13.743736578382249" x="10.994989262705799" y="52.22619899785255"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313529" x="35.73371510379385" y="52.22619899785255"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="43.979957050823195" y="52.22619899785255"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="49.477451682176095" y="52.22619899785255"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.497494631352893" x="65.96993557623479" y="52.22619899785255"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764537" x="74.21617752326414" y="52.22619899785255"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313528985" x="13.743736578382249" y="49.477451682176095"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="27.487473156764498" y="49.477451682176095"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="32.984967788117395" y="49.477451682176095"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="41.23120973514675" y="49.477451682176095"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="52.22619899785254" y="49.477451682176095"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="60.472440944881896" y="49.477451682176095"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="65.96993557623479" y="49.477451682176095"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313528985" x="10.994989262705799" y="46.72870436649965"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="19.241231209735147" y="46.72870436649965"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="24.738725841088048" y="46.72870436649965"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313529" x="30.236220472440948" y="46.72870436649965"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="38.482462419470295" y="46.72870436649965"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313529" x="49.477451682176095" y="46.72870436649965"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="60.472440944881896" y="46.72870436649965"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.497494631352893" x="71.4674302075877" y="46.72870436649965"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="13.74373657838225" x="16.492483894058697" y="43.9799570508232"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="32.984967788117395" y="43.9799570508232"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="38.482462419470295" y="43.9799570508232"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="57.72369362920544" y="43.9799570508232"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="10.9949892627058" x="68.71868289191124" y="43.9799570508232"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="16.492483894058694" x="10.994989262705799" y="41.23120973514675"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="30.236220472440948" y="41.23120973514675"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="35.73371510379385" y="41.23120973514675"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="41.23120973514675" y="41.23120973514675"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="10.9949892627058" x="49.477451682176095" y="41.23120973514675"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764537" x="65.96993557623479" y="41.23120973514675"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764537" x="74.21617752326414" y="41.23120973514675"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="21.989978525411598" y="38.4824624194703"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="27.487473156764498" y="38.4824624194703"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="35.73371510379385" y="38.4824624194703"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313529" x="41.23120973514675" y="38.4824624194703"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="21.989978525411594" x="52.22619899785254" y="38.4824624194703"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313529" x="16.492483894058697" y="35.73371510379385"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="32.984967788117395" y="35.73371510379385"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="43.979957050823195" y="35.73371510379385"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="52.22619899785254" y="35.73371510379385"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313529" x="63.22118826055834" y="35.73371510379385"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.497494631352893" x="71.4674302075877" y="35.73371510379385"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313528985" x="10.994989262705799" y="32.9849677881174"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="19.241231209735147" y="32.9849677881174"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="21.989978525411594" x="24.738725841088048" y="32.9849677881174"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="19.241231209735155" x="54.974946313528996" y="32.9849677881174"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="32.984967788117395" y="30.236220472440948"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="41.23120973514675" y="30.236220472440948"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="49.477451682176095" y="30.236220472440948"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764537" x="65.96993557623479" y="30.236220472440948"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="19.241231209735147" x="10.994989262705799" y="27.4874731567645"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="35.73371510379385" y="27.4874731567645"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="10.9949892627058" x="41.23120973514675" y="27.4874731567645"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="54.974946313528996" y="27.4874731567645"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="60.472440944881896" y="27.4874731567645"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764537" x="65.96993557623479" y="27.4874731567645"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="10.994989262705799" y="24.738725841088055"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="27.487473156764498" y="24.738725841088055"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="32.984967788117395" y="24.738725841088055"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="38.482462419470295" y="24.738725841088055"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="49.477451682176095" y="24.738725841088055"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="54.974946313528996" y="24.738725841088055"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="65.96993557623479" y="24.738725841088055"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764537" x="76.96492483894059" y="24.738725841088055"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="10.994989262705799" y="21.9899785254116"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.24624194702935" x="16.492483894058697" y="21.9899785254116"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="27.487473156764498" y="21.9899785254116"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="32.984967788117395" y="21.9899785254116"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="43.979957050823195" y="21.9899785254116"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="19.241231209735155" x="54.974946313528996" y="21.9899785254116"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="10.994989262705799" y="19.241231209735147"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.24624194702935" x="16.492483894058697" y="19.241231209735147"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="27.487473156764498" y="19.241231209735147"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="35.73371510379385" y="19.241231209735147"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313529" x="46.72870436649964" y="19.241231209735147"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="57.72369362920544" y="19.241231209735147"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="71.4674302075877" y="19.241231209735147"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="10.994989262705799" y="16.492483894058708"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.24624194702935" x="16.492483894058697" y="16.492483894058708"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="27.487473156764498" y="16.492483894058708"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="35.73371510379385" y="16.492483894058708"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="54.974946313528996" y="16.492483894058708"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764537" x="68.71868289191124" y="16.492483894058708"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764537" x="74.21617752326414" y="16.492483894058708"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="10.994989262705799" y="13.743736578382254"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="27.487473156764498" y="13.743736578382254"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="32.984967788117395" y="13.743736578382254"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="43.979957050823195" y="13.743736578382254"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="49.477451682176095" y="13.743736578382254"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="13.743736578382247" x="63.22118826055834" y="13.743736578382254"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="19.241231209735147" x="10.994989262705799" y="10.9949892627058"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="32.984967788117395" y="10.9949892627058"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="38.482462419470295" y="10.9949892627058"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313529" x="49.477451682176095" y="10.9949892627058"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313529" x="57.72369362920544" y="10.9949892627058"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="71.4674302075877" y="10.9949892627058"></rect>
+</g>
+</g>
+</g>
+</svg>
+<div class="l">HOA website</div><div class="u">Documents &amp; forms<br/><a href="https://boyettecreekhoa.com">boyettecreekhoa.com</a></div></div>
+<div class="qr"><svg fill-rule="evenodd" height="90.70866141732284" preserveaspectratio="xMinYMin meet" version="1.0" viewbox="0 0 90 90" width="90.70866141732284" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<clippath id="clip">
+<rect height="90.70866141732284" width="90.70866141732284" x="0" y="0"></rect>
+</clippath>
+<g id="group" style="clip-path: url(#clip)" transform="scale(1,-1) translate(0,-90)">
+<g transform="">
+<g transform="">
+<rect height="90.70866141732284" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: none; fill-rule: evenodd;" width="90.70866141732284" x="0" y="0"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="19.241231209735147" x="10.994989262705799" y="76.96492483894059"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="41.23120973514675" y="76.96492483894059"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="46.72870436649964" y="76.96492483894059"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="19.241231209735147" x="60.472440944881896" y="76.96492483894059"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="10.994989262705799" y="74.21617752326415"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="27.487473156764498" y="74.21617752326415"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="32.984967788117395" y="74.21617752326415"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="10.9949892627058" x="46.72870436649964" y="74.21617752326415"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="60.472440944881896" y="74.21617752326415"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764537" x="76.96492483894059" y="74.21617752326415"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="10.994989262705799" y="71.4674302075877"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.24624194702935" x="16.492483894058697" y="71.4674302075877"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="27.487473156764498" y="71.4674302075877"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313529" x="35.73371510379385" y="71.4674302075877"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="49.477451682176095" y="71.4674302075877"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="60.472440944881896" y="71.4674302075877"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="65.96993557623479" y="71.4674302075877"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764537" x="76.96492483894059" y="71.4674302075877"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="10.994989262705799" y="68.71868289191124"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.24624194702935" x="16.492483894058697" y="68.71868289191124"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="27.487473156764498" y="68.71868289191124"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313529" x="32.984967788117395" y="68.71868289191124"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="10.9949892627058" x="43.979957050823195" y="68.71868289191124"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="60.472440944881896" y="68.71868289191124"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="65.96993557623479" y="68.71868289191124"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764537" x="76.96492483894059" y="68.71868289191124"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="10.994989262705799" y="65.9699355762348"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.24624194702935" x="16.492483894058697" y="65.9699355762348"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="27.487473156764498" y="65.9699355762348"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="41.23120973514675" y="65.9699355762348"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="54.974946313528996" y="65.9699355762348"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="60.472440944881896" y="65.9699355762348"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="65.96993557623479" y="65.9699355762348"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764537" x="76.96492483894059" y="65.9699355762348"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="10.994989262705799" y="63.22118826055835"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="27.487473156764498" y="63.22118826055835"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="32.984967788117395" y="63.22118826055835"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="38.482462419470295" y="63.22118826055835"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="46.72870436649964" y="63.22118826055835"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313529" x="52.22619899785254" y="63.22118826055835"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="60.472440944881896" y="63.22118826055835"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764537" x="76.96492483894059" y="63.22118826055835"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="19.241231209735147" x="10.994989262705799" y="60.472440944881896"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="32.984967788117395" y="60.472440944881896"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="38.482462419470295" y="60.472440944881896"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="43.979957050823195" y="60.472440944881896"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="49.477451682176095" y="60.472440944881896"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="54.974946313528996" y="60.472440944881896"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="19.241231209735147" x="60.472440944881896" y="60.472440944881896"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313529" x="52.22619899785254" y="57.72369362920545"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="13.743736578382249" x="10.994989262705799" y="54.974946313528996"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="13.74373657838225" x="27.487473156764498" y="54.974946313528996"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="10.9949892627058" x="43.979957050823195" y="54.974946313528996"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="57.72369362920544" y="54.974946313528996"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="63.22118826055834" y="54.974946313528996"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764537" x="68.71868289191124" y="54.974946313528996"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764537" x="74.21617752326414" y="54.974946313528996"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="24.738725841088048" y="52.22619899785255"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313529" x="32.984967788117395" y="52.22619899785255"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="41.23120973514675" y="52.22619899785255"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="46.72870436649964" y="52.22619899785255"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="54.974946313528996" y="52.22619899785255"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="63.22118826055834" y="52.22619899785255"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764537" x="74.21617752326414" y="52.22619899785255"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764484" x="13.743736578382249" y="49.477451682176095"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="19.241231209735147" y="49.477451682176095"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313529" x="24.738725841088048" y="49.477451682176095"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="35.73371510379385" y="49.477451682176095"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="10.9949892627058" x="43.979957050823195" y="49.477451682176095"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764537" x="68.71868289191124" y="49.477451682176095"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.497494631352893" x="74.21617752326414" y="49.477451682176095"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="16.492483894058697" y="46.72870436649965"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313529" x="21.989978525411598" y="46.72870436649965"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="13.743736578382247" x="32.984967788117395" y="46.72870436649965"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="49.477451682176095" y="46.72870436649965"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="13.743736578382247" x="54.974946313528996" y="46.72870436649965"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764537" x="76.96492483894059" y="46.72870436649965"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="10.994989262705799" y="43.9799570508232"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="10.994989262705797" x="27.487473156764498" y="43.9799570508232"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313529" x="46.72870436649964" y="43.9799570508232"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313529" x="57.72369362920544" y="43.9799570508232"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764537" x="65.96993557623479" y="43.9799570508232"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="71.4674302075877" y="43.9799570508232"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="10.994989262705799" y="41.23120973514675"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313529" x="16.492483894058697" y="41.23120973514675"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="24.738725841088048" y="41.23120973514675"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="30.236220472440948" y="41.23120973514675"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="35.73371510379385" y="41.23120973514675"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313529" x="46.72870436649964" y="41.23120973514675"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="63.22118826055834" y="41.23120973514675"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764537" x="68.71868289191124" y="41.23120973514675"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764537" x="74.21617752326414" y="41.23120973514675"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="10.994989262705799" y="38.4824624194703"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="16.492483894058697" y="38.4824624194703"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="10.994989262705797" x="27.487473156764498" y="38.4824624194703"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="52.22619899785254" y="38.4824624194703"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="57.72369362920544" y="38.4824624194703"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029354" x="63.22118826055834" y="38.4824624194703"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.497494631352893" x="74.21617752326414" y="38.4824624194703"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="10.994989262705799" y="35.73371510379385"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="16.492483894058697" y="35.73371510379385"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="24.738725841088048" y="35.73371510379385"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313529" x="30.236220472440948" y="35.73371510379385"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313529" x="41.23120973514675" y="35.73371510379385"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="49.477451682176095" y="35.73371510379385"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313529" x="63.22118826055834" y="35.73371510379385"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764537" x="76.96492483894059" y="35.73371510379385"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="10.994989262705799" y="32.9849677881174"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="16.492483894058697" y="32.9849677881174"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313529" x="24.738725841088048" y="32.9849677881174"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="24.738725841088048" x="43.979957050823195" y="32.9849677881174"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764537" x="71.4674302075877" y="32.9849677881174"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313529" x="32.984967788117395" y="30.236220472440948"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="41.23120973514675" y="30.236220472440948"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="54.974946313528996" y="30.236220472440948"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.497494631352893" x="65.96993557623479" y="30.236220472440948"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="19.241231209735147" x="10.994989262705799" y="27.4874731567645"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="32.984967788117395" y="27.4874731567645"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="49.477451682176095" y="27.4874731567645"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="54.974946313528996" y="27.4874731567645"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="60.472440944881896" y="27.4874731567645"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764537" x="65.96993557623479" y="27.4874731567645"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="71.4674302075877" y="27.4874731567645"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="10.994989262705799" y="24.738725841088055"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="27.487473156764498" y="24.738725841088055"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313529" x="35.73371510379385" y="24.738725841088055"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="49.477451682176095" y="24.738725841088055"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="54.974946313528996" y="24.738725841088055"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.497494631352893" x="65.96993557623479" y="24.738725841088055"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="10.994989262705799" y="21.9899785254116"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.24624194702935" x="16.492483894058697" y="21.9899785254116"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="27.487473156764498" y="21.9899785254116"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313529" x="32.984967788117395" y="21.9899785254116"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="24.738725841088048" x="43.979957050823195" y="21.9899785254116"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.497494631352893" x="71.4674302075877" y="21.9899785254116"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="10.994989262705799" y="19.241231209735147"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.24624194702935" x="16.492483894058697" y="19.241231209735147"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="27.487473156764498" y="19.241231209735147"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313529" x="32.984967788117395" y="19.241231209735147"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="41.23120973514675" y="19.241231209735147"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313529" x="49.477451682176095" y="19.241231209735147"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313529" x="57.72369362920544" y="19.241231209735147"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="13.743736578382254" x="65.96993557623479" y="19.241231209735147"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="10.994989262705799" y="16.492483894058708"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.24624194702935" x="16.492483894058697" y="16.492483894058708"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="27.487473156764498" y="16.492483894058708"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="32.984967788117395" y="16.492483894058708"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="38.482462419470295" y="16.492483894058708"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="43.979957050823195" y="16.492483894058708"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="49.477451682176095" y="16.492483894058708"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.497494631352893" x="68.71868289191124" y="16.492483894058708"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764537" x="76.96492483894059" y="16.492483894058708"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="10.994989262705799" y="13.743736578382254"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="27.487473156764498" y="13.743736578382254"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313529" x="32.984967788117395" y="13.743736578382254"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="54.974946313528996" y="13.743736578382254"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029354" x="63.22118826055834" y="13.743736578382254"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764537" x="76.96492483894059" y="13.743736578382254"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="19.241231209735147" x="10.994989262705799" y="10.9949892627058"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="32.984967788117395" y="10.9949892627058"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="38.482462419470295" y="10.9949892627058"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313529" x="46.72870436649964" y="10.9949892627058"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="57.72369362920544" y="10.9949892627058"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="16.4924838940587" x="63.22118826055834" y="10.9949892627058"></rect>
+</g>
+</g>
+</g>
+</svg>
+<div class="l">News &amp; events</div><div class="u">Buzz, directory, message the Board<br/>linktr.ee/boyettecreek</div></div>
+<div class="qr"><svg fill-rule="evenodd" height="90.70866141732284" preserveaspectratio="xMinYMin meet" version="1.0" viewbox="0 0 90 90" width="90.70866141732284" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<clippath id="clip">
+<rect height="90.70866141732284" width="90.70866141732284" x="0" y="0"></rect>
+</clippath>
+<g id="group" style="clip-path: url(#clip)" transform="scale(1,-1) translate(0,-90)">
+<g transform="">
+<g transform="">
+<rect height="90.70866141732284" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: none; fill-rule: evenodd;" width="90.70866141732284" x="0" y="0"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="19.241231209735147" x="10.994989262705799" y="76.96492483894059"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="32.984967788117395" y="76.96492483894059"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="43.979957050823195" y="76.96492483894059"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="49.477451682176095" y="76.96492483894059"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="19.241231209735147" x="60.472440944881896" y="76.96492483894059"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="10.994989262705799" y="74.21617752326415"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="27.487473156764498" y="74.21617752326415"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="32.984967788117395" y="74.21617752326415"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="46.72870436649964" y="74.21617752326415"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="54.974946313528996" y="74.21617752326415"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="60.472440944881896" y="74.21617752326415"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764537" x="76.96492483894059" y="74.21617752326415"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="10.994989262705799" y="71.4674302075877"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.24624194702935" x="16.492483894058697" y="71.4674302075877"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="27.487473156764498" y="71.4674302075877"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="32.984967788117395" y="71.4674302075877"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313529" x="38.482462419470295" y="71.4674302075877"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313529" x="52.22619899785254" y="71.4674302075877"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="60.472440944881896" y="71.4674302075877"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="65.96993557623479" y="71.4674302075877"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764537" x="76.96492483894059" y="71.4674302075877"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="10.994989262705799" y="68.71868289191124"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.24624194702935" x="16.492483894058697" y="68.71868289191124"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="27.487473156764498" y="68.71868289191124"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313529" x="32.984967788117395" y="68.71868289191124"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="41.23120973514675" y="68.71868289191124"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313529" x="46.72870436649964" y="68.71868289191124"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="54.974946313528996" y="68.71868289191124"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="60.472440944881896" y="68.71868289191124"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="65.96993557623479" y="68.71868289191124"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764537" x="76.96492483894059" y="68.71868289191124"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="10.994989262705799" y="65.9699355762348"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.24624194702935" x="16.492483894058697" y="65.9699355762348"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="27.487473156764498" y="65.9699355762348"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="49.477451682176095" y="65.9699355762348"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="60.472440944881896" y="65.9699355762348"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="65.96993557623479" y="65.9699355762348"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764537" x="76.96492483894059" y="65.9699355762348"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="10.994989262705799" y="63.22118826055835"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="27.487473156764498" y="63.22118826055835"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="32.984967788117395" y="63.22118826055835"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="41.23120973514675" y="63.22118826055835"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="54.974946313528996" y="63.22118826055835"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="60.472440944881896" y="63.22118826055835"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764537" x="76.96492483894059" y="63.22118826055835"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="19.241231209735147" x="10.994989262705799" y="60.472440944881896"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="32.984967788117395" y="60.472440944881896"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="38.482462419470295" y="60.472440944881896"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="43.979957050823195" y="60.472440944881896"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="49.477451682176095" y="60.472440944881896"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="54.974946313528996" y="60.472440944881896"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="19.241231209735147" x="60.472440944881896" y="60.472440944881896"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="35.73371510379385" y="57.72369362920545"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="43.979957050823195" y="57.72369362920545"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313529" x="49.477451682176095" y="57.72369362920545"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313528985" x="10.994989262705799" y="54.974946313528996"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.24624194702935" x="21.989978525411598" y="54.974946313528996"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="41.23120973514675" y="54.974946313528996"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="63.22118826055834" y="54.974946313528996"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="10.9949892627058" x="68.71868289191124" y="54.974946313528996"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029349" x="10.994989262705799" y="52.22619899785255"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="24.738725841088048" y="52.22619899785255"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="32.984967788117395" y="52.22619899785255"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313529" x="43.979957050823195" y="52.22619899785255"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="52.22619899785254" y="52.22619899785255"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.497494631352893" x="65.96993557623479" y="52.22619899785255"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764537" x="74.21617752326414" y="52.22619899785255"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="10.9949892627058" x="19.241231209735147" y="49.477451682176095"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="41.23120973514675" y="49.477451682176095"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313529" x="52.22619899785254" y="49.477451682176095"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="10.994989262705793" x="63.22118826055834" y="49.477451682176095"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="10.994989262705799" y="46.72870436649965"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="16.492483894058697" y="46.72870436649965"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313529" x="21.989978525411598" y="46.72870436649965"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313529" x="30.236220472440948" y="46.72870436649965"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313529" x="38.482462419470295" y="46.72870436649965"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="49.477451682176095" y="46.72870436649965"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.497494631352893" x="60.472440944881896" y="46.72870436649965"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.497494631352893" x="71.4674302075877" y="46.72870436649965"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="10.994989262705799" y="43.9799570508232"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="16.492483894058697" y="43.9799570508232"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.24624194702935" x="21.989978525411598" y="43.9799570508232"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="32.984967788117395" y="43.9799570508232"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="38.482462419470295" y="43.9799570508232"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="43.979957050823195" y="43.9799570508232"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="52.22619899785254" y="43.9799570508232"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313529" x="57.72369362920544" y="43.9799570508232"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="10.9949892627058" x="68.71868289191124" y="43.9799570508232"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="13.743736578382249" x="10.994989262705799" y="41.23120973514675"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="10.9949892627058" x="49.477451682176095" y="41.23120973514675"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764537" x="65.96993557623479" y="41.23120973514675"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764537" x="74.21617752326414" y="41.23120973514675"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="19.241231209735147" y="38.4824624194703"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313529" x="24.738725841088048" y="38.4824624194703"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313529" x="35.73371510379385" y="38.4824624194703"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="52.22619899785254" y="38.4824624194703"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="10.994989262705793" x="63.22118826055834" y="38.4824624194703"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="10.994989262705797" x="16.492483894058697" y="35.73371510379385"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="30.236220472440948" y="35.73371510379385"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="35.73371510379385" y="35.73371510379385"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="43.979957050823195" y="35.73371510379385"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="49.477451682176095" y="35.73371510379385"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="54.974946313528996" y="35.73371510379385"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="60.472440944881896" y="35.73371510379385"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.497494631352893" x="71.4674302075877" y="35.73371510379385"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="24.738725841088048" x="10.994989262705799" y="32.9849677881174"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313529" x="41.23120973514675" y="32.9849677881174"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="49.477451682176095" y="32.9849677881174"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="19.241231209735155" x="54.974946313528996" y="32.9849677881174"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="32.984967788117395" y="30.236220472440948"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="38.482462419470295" y="30.236220472440948"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="43.979957050823195" y="30.236220472440948"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="49.477451682176095" y="30.236220472440948"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="54.974946313528996" y="30.236220472440948"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764537" x="65.96993557623479" y="30.236220472440948"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="19.241231209735147" x="10.994989262705799" y="27.4874731567645"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="35.73371510379385" y="27.4874731567645"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="10.9949892627058" x="41.23120973514675" y="27.4874731567645"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="54.974946313528996" y="27.4874731567645"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="60.472440944881896" y="27.4874731567645"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764537" x="65.96993557623479" y="27.4874731567645"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="10.994989262705799" y="24.738725841088055"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="27.487473156764498" y="24.738725841088055"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="13.743736578382247" x="32.984967788117395" y="24.738725841088055"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="54.974946313528996" y="24.738725841088055"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="65.96993557623479" y="24.738725841088055"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="10.994989262705799" y="21.9899785254116"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.24624194702935" x="16.492483894058697" y="21.9899785254116"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="27.487473156764498" y="21.9899785254116"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313529" x="32.984967788117395" y="21.9899785254116"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313529" x="41.23120973514675" y="21.9899785254116"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="19.241231209735155" x="54.974946313528996" y="21.9899785254116"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="10.994989262705799" y="19.241231209735147"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.24624194702935" x="16.492483894058697" y="19.241231209735147"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="27.487473156764498" y="19.241231209735147"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="35.73371510379385" y="19.241231209735147"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="41.23120973514675" y="19.241231209735147"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="46.72870436649964" y="19.241231209735147"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.497494631352893" x="60.472440944881896" y="19.241231209735147"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="71.4674302075877" y="19.241231209735147"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="10.994989262705799" y="16.492483894058708"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.24624194702935" x="16.492483894058697" y="16.492483894058708"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="27.487473156764498" y="16.492483894058708"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="10.9949892627058" x="38.482462419470295" y="16.492483894058708"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313529" x="57.72369362920544" y="16.492483894058708"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764537" x="68.71868289191124" y="16.492483894058708"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764537" x="74.21617752326414" y="16.492483894058708"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="10.994989262705799" y="13.743736578382254"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="27.487473156764498" y="13.743736578382254"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="32.984967788117395" y="13.743736578382254"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="43.979957050823195" y="13.743736578382254"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313529" x="49.477451682176095" y="13.743736578382254"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="16.492483894058694" x="60.472440944881896" y="13.743736578382254"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="19.241231209735147" x="10.994989262705799" y="10.9949892627058"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="32.984967788117395" y="10.9949892627058"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="38.482462419470295" y="10.9949892627058"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="52.22619899785254" y="10.9949892627058"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="71.4674302075877" y="10.9949892627058"></rect>
+</g>
+</g>
+</g>
+</svg>
+<div class="l">Homeowner Portal</div><div class="u">Dues &amp; requests<br/>mcneilmsi.com</div></div>
+</div>
+<div class="spacer"></div>
+<p class="disclaimer">This guide is a friendly summary prepared by the Boyette Creek HOA Board of Directors. It doesn't replace the recorded Declaration of Covenants, the Bylaws or the ARB Planning Criteria, which control if anything here differs. Phone numbers were checked October 2026.</p>
+</div></div>
+    </div>
+    <div class="part" id="flap">
+      <div class="face" data-label="Welcome, neighbor"><div class="panel w-flap">
+<h2>Welcome, neighbor!</h2>
+<div class="rule"></div>
+<p>Boyette Creek is a deed-restricted community of 556 homes. The Homeowners Association is run by a volunteer Board of resident Directors with day-to-day help from our management company, McNeil Management Services. Every lot is covered by the same recorded rules, and they move with the house when it sells or is rented.</p>
+<p style="margin-top:.07in">This guide covers what most new residents ask about in their first few months. It's a summary, so the full documents are on the HOA website.</p>
+<h3>Your first-month checklist</h3>
+<ul class="check">
+<li><b>Create your Homeowner Portal account</b> at mcneilmsi.com to view your account and pay dues.</li>
+<li><b>Give McNeil your contact info.</b> There's one Address of Record per lot, so update it whenever your phone, email or mailing address changes.</li>
+<li><b>Read the Declaration and ARB Planning Criteria</b> on boyettecreekhoa.com before you plan any outside project.</li>
+<li><b>Follow neighborhood news</b> on our Linktree. It has the <i>Boyette Creek Buzz</i> newsletter, events, the neighbor business directory and a form for messaging the Board.</li>
+<li><b>Renting?</b> Your landlord is required to give you a copy of the community rules. Ask for it.</li>
+</ul>
+<div class="spacer"></div>
+<div class="callout">
+<p><b>Dues</b> are billed twice a year, due <b>January 1</b> and <b>July 1</b>. Each December, owners get a notice of the next year's assessment. If yours hasn't arrived by year-end, contact McNeil.</p>
+</div>
+</div></div>
+      <div class="face rev" data-label="Renting &amp; storms"><div class="panel w-flap">
+<div class="band"><div class="k">Good to know</div><h2>Renting &amp; storms</h2></div>
+<h3 style="margin-top:0">If you rent out your home</h3>
+<ul>
+<li>Only whole-home rentals are allowed, with no room-by-room leasing. Leases must run from <b>30 days to 1 year</b>, so <b>short-term and vacation rentals</b> (Airbnb, VRBO and similar) <b>are not allowed</b>.</li>
+<li>Give the HOA (through McNeil) <b>30 days' written notice</b> and a copy of the lease. The tenant also completes the HOA's information form before moving in.</li>
+<li>Give your tenants a copy of the rules. <b>Owners are responsible</b> for their tenants following them.</li>
+</ul>
+<h3>Hurricane season</h3>
+<ul>
+<li>Put shutters up no more than <b>72 hours</b> before a forecast storm, and take them down within <b>10 days</b> after it passes.</li>
+<li>Permanent shutters, standby generators and metal roofs need ARB approval. Metal roofs must be shingle-style in a traditional color.</li>
+</ul>
+<h3>Pets &amp; neighbors</h3>
+<ul>
+<li>Pets must be leashed or inside a fenced yard, and owners pick up after them every time.</li>
+<li>Keep noise, smoke and odors from bothering the neighbors.</li>
+</ul>
+<div class="spacer"></div>
+<div class="tealbox">
+<h3 style="margin-top:0">Get involved</h3>
+<div style="display:flex;gap:.1in;align-items:center">
+<p style="flex:1">Board meetings are open to all homeowners, with dates on the website and Linktree. Volunteers run the Welcome and Beautification committees, Street Captains and the ARB. <b>Scan to raise your hand!</b></p>
+<div class="qr" style="width:.8in"><svg fill-rule="evenodd" height="90.70866141732284" preserveaspectratio="xMinYMin meet" version="1.0" viewbox="0 0 90 90" width="90.70866141732284" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<clippath id="clip">
+<rect height="90.70866141732284" width="90.70866141732284" x="0" y="0"></rect>
+</clippath>
+<g id="group" style="clip-path: url(#clip)" transform="scale(1,-1) translate(0,-90)">
+<g transform="">
+<g transform="">
+<rect height="90.70866141732284" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: none; fill-rule: evenodd;" width="90.70866141732284" x="0" y="0"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="19.241231209735147" x="10.994989262705799" y="76.96492483894059"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="32.984967788117395" y="76.96492483894059"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="41.23120973514675" y="76.96492483894059"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="19.241231209735147" x="60.472440944881896" y="76.96492483894059"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="10.994989262705799" y="74.21617752326415"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="27.487473156764498" y="74.21617752326415"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="32.984967788117395" y="74.21617752326415"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313529" x="43.979957050823195" y="74.21617752326415"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="54.974946313528996" y="74.21617752326415"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="60.472440944881896" y="74.21617752326415"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764537" x="76.96492483894059" y="74.21617752326415"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="10.994989262705799" y="71.4674302075877"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.24624194702935" x="16.492483894058697" y="71.4674302075877"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="27.487473156764498" y="71.4674302075877"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="13.743736578382247" x="38.482462419470295" y="71.4674302075877"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="60.472440944881896" y="71.4674302075877"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="65.96993557623479" y="71.4674302075877"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764537" x="76.96492483894059" y="71.4674302075877"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="10.994989262705799" y="68.71868289191124"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.24624194702935" x="16.492483894058697" y="68.71868289191124"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="27.487473156764498" y="68.71868289191124"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="38.482462419470295" y="68.71868289191124"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="46.72870436649964" y="68.71868289191124"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="52.22619899785254" y="68.71868289191124"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="60.472440944881896" y="68.71868289191124"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="65.96993557623479" y="68.71868289191124"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764537" x="76.96492483894059" y="68.71868289191124"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="10.994989262705799" y="65.9699355762348"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.24624194702935" x="16.492483894058697" y="65.9699355762348"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="27.487473156764498" y="65.9699355762348"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="10.9949892627058" x="32.984967788117395" y="65.9699355762348"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="49.477451682176095" y="65.9699355762348"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="54.974946313528996" y="65.9699355762348"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="60.472440944881896" y="65.9699355762348"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="65.96993557623479" y="65.9699355762348"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764537" x="76.96492483894059" y="65.9699355762348"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="10.994989262705799" y="63.22118826055835"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="27.487473156764498" y="63.22118826055835"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="32.984967788117395" y="63.22118826055835"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="41.23120973514675" y="63.22118826055835"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313529" x="46.72870436649964" y="63.22118826055835"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="54.974946313528996" y="63.22118826055835"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="60.472440944881896" y="63.22118826055835"></rect>
+<rect height="2.7487473156764537" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764537" x="76.96492483894059" y="63.22118826055835"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="19.241231209735147" x="10.994989262705799" y="60.472440944881896"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="32.984967788117395" y="60.472440944881896"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="38.482462419470295" y="60.472440944881896"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="43.979957050823195" y="60.472440944881896"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="49.477451682176095" y="60.472440944881896"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="54.974946313528996" y="60.472440944881896"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="19.241231209735147" x="60.472440944881896" y="60.472440944881896"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="32.984967788117395" y="57.72369362920545"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="38.482462419470295" y="57.72369362920545"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="49.477451682176095" y="57.72369362920545"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029349" x="10.994989262705799" y="54.974946313528996"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313529" x="24.738725841088048" y="54.974946313528996"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="32.984967788117395" y="54.974946313528996"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="49.477451682176095" y="54.974946313528996"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="13.743736578382247" x="54.974946313528996" y="54.974946313528996"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.497494631352893" x="74.21617752326414" y="54.974946313528996"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313528985" x="13.743736578382249" y="52.22619899785255"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="21.989978525411598" y="52.22619899785255"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="32.984967788117395" y="52.22619899785255"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="49.477451682176095" y="52.22619899785255"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.497494631352893" x="60.472440944881896" y="52.22619899785255"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764537" x="68.71868289191124" y="52.22619899785255"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.497494631352893" x="74.21617752326414" y="52.22619899785255"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="16.492483894058694" x="19.241231209735147" y="49.477451682176095"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="41.23120973514675" y="49.477451682176095"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="46.72870436649964" y="49.477451682176095"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="16.492483894058694" x="57.72369362920544" y="49.477451682176095"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764537" x="76.96492483894059" y="49.477451682176095"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="16.492483894058694" x="10.994989262705799" y="46.72870436649965"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="30.236220472440948" y="46.72870436649965"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="52.22619899785254" y="46.72870436649965"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="57.72369362920544" y="46.72870436649965"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="63.22118826055834" y="46.72870436649965"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764537" x="68.71868289191124" y="46.72870436649965"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="16.4924838940587" x="13.743736578382249" y="43.9799570508232"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313529" x="32.984967788117395" y="43.9799570508232"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="41.23120973514675" y="43.9799570508232"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="52.22619899785254" y="43.9799570508232"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="60.472440944881896" y="43.9799570508232"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764537" x="76.96492483894059" y="43.9799570508232"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764484" x="13.743736578382249" y="41.23120973514675"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="30.236220472440948" y="41.23120973514675"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="43.979957050823195" y="41.23120973514675"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="49.477451682176095" y="41.23120973514675"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.497494631352893" x="60.472440944881896" y="41.23120973514675"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.497494631352893" x="74.21617752326414" y="41.23120973514675"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029349" x="10.994989262705799" y="38.4824624194703"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.24624194702935" x="27.487473156764498" y="38.4824624194703"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="13.743736578382247" x="43.979957050823195" y="38.4824624194703"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.497494631352893" x="68.71868289191124" y="38.4824624194703"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764537" x="76.96492483894059" y="38.4824624194703"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313529" x="16.492483894058697" y="35.73371510379385"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="24.738725841088048" y="35.73371510379385"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313529" x="41.23120973514675" y="35.73371510379385"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="49.477451682176095" y="35.73371510379385"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029354" x="63.22118826055834" y="35.73371510379385"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313528985" x="10.994989262705799" y="32.9849677881174"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="21.9899785254116" x="19.241231209735147" y="32.9849677881174"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313529" x="43.979957050823195" y="32.9849677881174"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="13.743736578382247" x="54.974946313528996" y="32.9849677881174"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764537" x="74.21617752326414" y="32.9849677881174"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313529" x="32.984967788117395" y="30.236220472440948"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="46.72870436649964" y="30.236220472440948"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="54.974946313528996" y="30.236220472440948"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764537" x="65.96993557623479" y="30.236220472440948"></rect>
+<rect height="2.7487473156764466" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764537" x="76.96492483894059" y="30.236220472440948"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="19.241231209735147" x="10.994989262705799" y="27.4874731567645"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="38.482462419470295" y="27.4874731567645"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="54.974946313528996" y="27.4874731567645"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="60.472440944881896" y="27.4874731567645"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764537" x="65.96993557623479" y="27.4874731567645"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764537" x="76.96492483894059" y="27.4874731567645"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="10.994989262705799" y="24.738725841088055"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="27.487473156764498" y="24.738725841088055"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="32.984967788117395" y="24.738725841088055"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="54.974946313528996" y="24.738725841088055"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764537" x="65.96993557623479" y="24.738725841088055"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764537" x="74.21617752326414" y="24.738725841088055"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="10.994989262705799" y="21.9899785254116"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.24624194702935" x="16.492483894058697" y="21.9899785254116"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="27.487473156764498" y="21.9899785254116"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="35.73371510379385" y="21.9899785254116"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="16.4924838940587" x="52.22619899785254" y="21.9899785254116"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764537" x="74.21617752326414" y="21.9899785254116"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="10.994989262705799" y="19.241231209735147"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.24624194702935" x="16.492483894058697" y="19.241231209735147"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="27.487473156764498" y="19.241231209735147"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313529" x="35.73371510379385" y="19.241231209735147"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313529" x="43.979957050823195" y="19.241231209735147"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="52.22619899785254" y="19.241231209735147"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="57.72369362920544" y="19.241231209735147"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764537" x="65.96993557623479" y="19.241231209735147"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.497494631352893" x="71.4674302075877" y="19.241231209735147"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="10.994989262705799" y="16.492483894058708"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.24624194702935" x="16.492483894058697" y="16.492483894058708"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="27.487473156764498" y="16.492483894058708"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="32.984967788117395" y="16.492483894058708"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.4974946313529" x="38.482462419470295" y="16.492483894058708"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="52.22619899785254" y="16.492483894058708"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="57.72369362920544" y="16.492483894058708"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029354" x="63.22118826055834" y="16.492483894058708"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="5.497494631352893" x="74.21617752326414" y="16.492483894058708"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="10.994989262705799" y="13.743736578382254"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.74874731567645" x="27.487473156764498" y="13.743736578382254"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="32.984967788117395" y="13.743736578382254"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="38.482462419470295" y="13.743736578382254"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="19.241231209735147" x="49.477451682176095" y="13.743736578382254"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="19.241231209735147" x="10.994989262705799" y="10.9949892627058"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="10.9949892627058" x="32.984967788117395" y="10.9949892627058"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764466" x="46.72870436649964" y="10.9949892627058"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="8.246241947029347" x="54.974946313528996" y="10.9949892627058"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764537" x="68.71868289191124" y="10.9949892627058"></rect>
+<rect height="2.74874731567645" style="stroke: none; stroke-linecap: butt; stroke-width: 0; fill: rgb(0%,0%,0%); fill-rule: evenodd;" width="2.7487473156764537" x="76.96492483894059" y="10.9949892627058"></rect>
+</g>
+</g>
+</g>
+</svg>
+<div class="u">Volunteer sign-up</div></div>
+</div>
+</div>
+<p class="cite" style="margin-top:.06in">Declaration Art. IX §§2, 4, 18 · ARB Planning Criteria · Hurricane Standards (Board-approved 9/16/24)</p>
+</div></div>
+    </div>
+    <div class="part" id="cover">
+      <div class="face" data-label="Front cover"><div class="panel w-std cover">
+<div>
+<img alt="Boyette Creek HOA logo" class="logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgNDAwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQwMCI+CiAgPGRlZnM+PGNsaXBQYXRoIGlkPSJjYzkiPjxjaXJjbGUgY3g9IjIwMCIgY3k9IjIwMCIgcj0iMTkyIi8+PC9jbGlwUGF0aD48L2RlZnM+CiAgPGNpcmNsZSBjeD0iMjAwIiBjeT0iMjAwIiByPSIxOTgiIGZpbGw9IiNDOUE4NEMiLz4KICA8Y2lyY2xlIGN4PSIyMDAiIGN5PSIyMDAiIHI9IjE5MiIgZmlsbD0iIzFBMUExQyIvPgogIDxjaXJjbGUgY3g9IjIwMCIgY3k9IjIwMCIgcj0iMTg0IiBmaWxsPSJub25lIiBzdHJva2U9IiNDOUE4NEMiIHN0cm9rZS13aWR0aD0iMSIvPgogIDxnIGNsaXAtcGF0aD0idXJsKCNjYzkpIj4KICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE5Niw4MikiIGZpbGw9IiNDOUE4NEMiPgogICAgICA8cGF0aCBkPSJNLTQ5LjEsLTU1LjJMLTQ1LjAsLTUxLjRMLTM4LjEsLTM2LjZMLTM0LjcsLTMyLjFMLTQzLjEsLTU3LjFMLTM4LjksLTUzLjNMLTMzLjIsLTQwLjRMLTI5LjQsLTI3LjVMLTMwLjIsLTM3LjRMLTM0LjcsLTU1LjZMLTMxLjcsLTUyLjlMLTI3LjUsLTQzLjhMLTI1LjYsLTI1LjJMLTI0LjUsLTMwLjVMLTI0LjUsLTUwLjdMLTIxLjQsLTQ2LjVMLTIwLjMsLTQxLjJMLTIwLjMsLTMzLjZMLTIzLjAsLTIzLjNMLTE5LjUsLTI5LjhMLTE2LjEsLTQyLjdMLTE0LjIsLTM5LjZMLTEzLjgsLTM1LjFMLTE1LjQsLTI4LjZMLTE5LjUsLTIxLjhMLTEwLjEsLTM0LjBMLTguOSwtMzEuN0wtOS4zLC0yNy45TC0xNy4zLC0xOS4yTC0xNS4wLC0xOS45TC02LjMsLTI3LjlMLTUuNSwtMjQuMUwtMTQuMiwtMTcuM0wtMy42LC0yMy4zTC0yLjgsLTIwLjdMLTEwLjEsLTE2LjFMLTEuNywtMTkuMkwtMS4zLC0xNi45TC0xMC4xLC0xMy4xTDEuMywtMTUuNEwwLjksLTE0LjJMLTMuNiwtMTIuN0wyLjUsLTEzLjhMMy4yLC0xMi4zTC0wLjYsLTExLjJMNS4xLC0xMS42TDUuNSwtMTAuNEwyLjgsLTkuN0w3LjQsLTkuM0w2LjYsLTguMkwyLjUsLTcuNEw4LjUsLTcuOEw5LjMsLTYuNkwtMi4xLC01LjFMMTAuOCwtNS41TDExLjYsLTMuMkwxMy41LC0yLjVMMTIuMCwtMC45TDEzLjgsLTAuNkwyNy4xLC0zMC4yTDI5LjgsLTQzLjhMMzAuNSwtNTguNkwzMi40LC01My43TDMyLjgsLTQ2LjFMMzEuNywtMzguOUwyOS4wLC0zMi40TDMxLjMsLTMyLjRMMzAuNSwtMzAuNUwzMi4xLC0zMi4xTDMzLjIsLTMxLjdMMzAuOSwtMjguNkwzMy4yLC0zMC41TDM1LjEsLTMwLjVMMjkuNCwtMjYuN0wzMC41LC0yOS4wTDI3LjUsLTI2LjdMMzAuNSwtMzAuMkwzMC4yLC0zMC45TDI3LjEsLTI3LjVMMjkuMCwtMzEuM0wyNy45LC0zMC45TDE1LjAsMC42TDkuNywwLjlMMTUuNywxLjNMMTYuOSwzLjJMMTMuOCwzLjZMMTcuMyw0LjdMMTQuNiw1LjFMMTkuNSw2LjNMMjAuNyw3LjRMMTkuNSw5LjNMMjIuNiwxMC40TDIwLjcsMTEuNkwyNC4xLDEyLjdMMjMuMCwxMy44TDE4LjQsMTMuNUwyNS42LDE1LjdMMjIuMiwxNi41TDE3LjMsMTQuNkwxNi41LDE1LjRMNDEuMiwyOC4zTDQxLjksMjcuOUwzNi4yLDIzLjdMNDMuNCwyNy41TDQxLjksMjcuOUw0MS45LDI5LjBMNDAuMCwyOS4wTDI5LjgsMjIuMkwyMy4wLDIxLjRMMzQuMywyOS4wTDE4LjQsMjEuMUwxNi41LDIxLjFMMzAuNSwzMC45TDM1LjEsMzIuMUwzNy44LDM2LjJMNDcuNiw0NS43TDU0LjEsNDYuOUw1NC40LDQ4LjBMNTIuOSw0OC40TDU5LjAsNTAuM0w1Ni4zLDQ5LjlMNTkuMCw1MS44TDU2LjcsNTEuNEw1MC43LDQ4LjBMNTMuNyw1MS4wTDU4LjYsNTMuM0w1MC4zLDUwLjNMMzYuNiwzNy4wTDMzLjIsMzUuNUwzMS43LDMyLjhMMTYuMSwyNi43TDIwLjMsMzAuOUwyOS44LDM0LjNMNDIuNyw1MC4zTDQ5LjUsNTIuOUw0Ny4yLDUzLjNMNTMuNyw1Ni4zTDUxLjQsNTYuN0w1NC4xLDU3LjlMNTIuMiw1Ny45TDUzLjcsNTkuMEw0My44LDU0LjFMMzMuMiw0MS41TDIyLjIsMzIuOEwxNC4yLDMwLjlMMi44LDI0LjlMLTIuOCwyMy43TC0xMS4yLDE4LjhMLTIyLjYsMTUuMEwtMzYuMiw3LjRMLTQ1LjMsNS45TC01OS4wLDYuNkwtNDguMCwyLjhMLTQzLjEsLTAuNkwtMzkuNiwtMC42TC0zNC4zLDIuMUwtMjQuMSwxMC4xTC0xOS45LDExLjJMLTcuNCwxMC44TC0xMi4zLDAuNkwtMTkuMiwtNi42TC0yOS44LC0xNC42TC00MC4wLC0zMC41TC00NS4wLC00MS41WiBNMzguMSwtNTguNkwzOS42LC01NC40TDM5LjYsLTQ5LjFMMzguMSwtNDIuN0wzMy42LC0zNC4wTDM0LjAsLTMzLjJMNDEuOSwtNDMuNEw0Ny4yLC01NC4xTDQ3LjYsLTQ5LjFMNDYuNSwtNDUuM0w0Mi4zLC0zNy44TDM2LjIsLTMxLjdMMzUuMSwtMzEuN0wzMy42LC0zMy42TDMwLjUsLTM0LjBMMzUuOSwtNDYuMVogTTQ1LjcsMC45TDQzLjgsMi4xTDQ0LjYsMy4yTDQxLjksMy42TDQzLjQsNC43TDQxLjIsNS41TDQxLjksNi42TDQwLjAsNy4wTDQwLjgsOC4yTDM5LjYsOC4yTDM4LjksOS43TDM3LjQsOS43TDM3LjAsMTEuMkwzNS4xLDExLjJMMzMuNiwxMy4xTDMxLjcsMTIuM0wzMC45LDcuNEwzMi44LDYuNkwzMi44LDUuMUwzMC4yLDMuMkwzMS43LDUuNUwzMC41LDYuNkwyNy4xLDMuMkwyMy4zLDEuM0wzMC4yLDMuMkwyNC45LDAuMkwzMC41LDIuMUwzMi40LDQuMEwzNC4wLDQuMEwzNS4xLDIuOEwzNC4zLDAuOUwzNy44LDEuM0wzNi4yLDAuNkwzNy40LC0wLjZMMzYuNiwtMS43WiBNMjEuMSw0LjBMMjYuNyw2LjZMMzAuMiw5LjNMMzAuNSwxMC40TDI5LjAsMTAuOEwzMi40LDE0LjZMMzIuNCwxNS40TDMwLjUsMTQuNkwzMC4yLDE1LjBMMzQuNywxOC4wTDQxLjIsMTguNEw0MS45LDE4LjhMNDIuNywyMC43TDM0LjcsMTkuMkwzNC43LDE5LjlMNDMuNCwyMS44TDQzLjgsMjMuMEwzMy42LDE5LjVMMzQuMywxOS4yTDM0LjAsMTguOEwzMC45LDE4LjRMMjcuMSwxNi4xTDI2LjcsMTQuNkwyNS4yLDEzLjVMMjUuMiwxMi4wTDI5LjAsMTQuNkwzMC41LDE0LjZMMjYuMCwxMS42TDIzLjAsNy40TDI2LjQsOC45TDI4LjYsMTAuOEwyOS40LDEwLjRaIE01Mi45LC00NS4zTDUxLjQsLTQwLjhMNDguOCwtMzcuNEw0My4xLC0zMi40TDM3LjQsLTI5LjBMMzcuNCwtMzAuMkwzNi4yLC0zMC45TDQ2LjEsLTM4LjlaIE01NS4yLC0zOC41TDU0LjEsLTM1LjlMNTEuNCwtMzMuMkwzOC41LC0yNy4xTDM4LjUsLTI5LjBaIE01NS42LC0zMi44TDUzLjMsLTI5LjhMNTAuMywtMjguM0wyOS44LC0yMi42TDM2LjIsLTI1LjZaIE01NC4xLC0yNC41TDUzLjcsLTIzLjBMNTIuNSwtMjIuMkw0Ny4yLC0yMC43TDM5LjMsLTE5LjVMNDAuNCwtMjAuM0w0MC4wLC0yMC43TDMxLjcsLTIwLjNaIE0zOC4xLC01LjFMMzguOSwtNS45TDQzLjEsLTUuMUw0NS43LC01LjVMMzguOSwtNy4wTDM5LjYsLTguMkw0My40LC03LjRMNDguOCwtNy40TDQ5LjUsLTYuNkw0OC40LC01LjVMNDUuMywtNS4xTDQ4LjQsLTQuNEw0Ny42LC0yLjhMNDUuNywtMi44WiBNNTQuOCwtMjguM0w1My43LC0yNi40TDUxLjQsLTI1LjJMMzguOSwtMjIuNkw0MC4wLC0yNC41WiBNNTMuMywtMjAuM0w1MS44LC0xOC40TDUwLjMsLTE3LjZMMzkuNiwtMTYuOUwzNy44LC0xOC4wTDM0LjMsLTE4LjRMMzguNSwtMTguNEwzOS4zLC0xNy42TDQwLjQsLTE4LjhMNDkuOSwtMjAuM1ogTTUxLjgsLTE2LjFMNTEuNCwtMTUuMEw1MC4zLC0xNC4yTDQxLjUsLTE0LjJMNDAuMCwtMTQuNkwzOS42LC0xNS40TDQxLjUsLTE2LjFaIE0zOS42LC04LjlMNDAuMCwtMTAuOEw0OC4wLC0xMC40TDUwLjMsLTkuN0w0OS4xLC04LjVMNDUuNywtOC45TDQ1LjcsLTguMlogTTQwLjAsLTEyLjNMNDAuNCwtMTMuNUw1MS4wLC0xMi43TDUxLjAsLTEyLjBMNDkuNSwtMTEuMkw0MS45LC0xMS42WiBNMzcuOCwtMi44TDM4LjksLTQuMEw0Ni41LC0yLjFMNDYuOSwtMC45TDQ1LjcsLTAuMlogTTI2LjQsMjIuNkwzMC41LDI0LjFMMzguOSwyOS40TDM1LjUsMjkuMFogTTI2LjAsLTEuN0wyOS40LC0wLjlMMzIuOCwwLjZMMzMuNiwxLjNMMzQuMCwyLjhMMzIuOCwyLjhMMzAuOSwwLjlaIE0yMi4yLDIuNUwyOC4zLDUuMUwyOS40LDYuM0wyOS44LDcuNEwyOS4wLDcuNFogTTM1LjksMjEuNEw0My40LDIzLjdMNDQuNiwyNC41TDQzLjEsMjQuOUw0MC4wLDIzLjNMMzguMSwyMy4wWiBNMzAuMiwtNS45TDM1LjEsLTUuNUwzNy4wLC00LjRMMzcuMCwtMy4yTDM2LjIsLTMuMkwzMS4zLC01LjlaIE0yOC4zLC0zLjJMMzEuNywtMi41TDM0LjAsLTEuM0wzNC43LC0wLjJMMzQuMCwwLjJaIE0zNi42LC0yOS40TDM2LjIsLTI4LjZMMjguNiwtMjQuOUwzNC4zLC0yOS4wTDM2LjIsLTI5LjhaIE0zNy44LC0yNy45TDM3LjAsLTI2LjdMMjkuMCwtMjMuN0wzNS45LC0yNy41WiBNMzguMSwtMjMuN0wzNy4wLC0yMi42TDMwLjUsLTIxLjRMMzYuNiwtMjMuN1ogTTMyLjgsLTkuN0wzNy4wLC05LjNMMzguMSwtOC41TDM4LjEsLTcuOFogTTMyLjEsLTguMkwzNS45LC03LjRMMzcuNCwtNi42TDM3LjgsLTUuOUwzNy4wLC01LjVMMzUuOSwtNi42WiBNMzQuMywtMTEuNkwzOC41LC0xMC44TDM4LjksLTkuN1ogTTMxLjMsLTQuMEwzNC4zLC0zLjJMMzUuOSwtMS4zWiBNMzguMSwyMy43TDQ0LjYsMjYuNEw0My44LDI2LjdaIi8+CiAgICA8L2c+CiAgICA8bGluZSB4MT0iMTEwIiB5MT0iMTMwIiB4Mj0iMjkwIiB5Mj0iMTMwIiBzdHJva2U9IiNDOUE4NEMiIHN0cm9rZS13aWR0aD0iMC42IiBvcGFjaXR5PSIwLjQ1Ii8+CiAgICA8dGV4dCB4PSIyMDAiIHk9IjIwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9Ikdlb3JnaWEsc2VyaWYiIGZvbnQtc3R5bGU9Iml0YWxpYyIgZm9udC13ZWlnaHQ9ImJvbGQiIGZvbnQtc2l6ZT0iNjQiIGZpbGw9IiNmZmZmZmYiIGxldHRlci1zcGFjaW5nPSItMSI+Qm95ZXR0ZTwvdGV4dD4KICAgIDxwYXRoIGQ9Ik0gNTgsMjIwIFEgMTEwLDIwNCAxNjIsMjIyIFEgMjIwLDI0MiAyNzgsMjE2IFEgMzA4LDIwNiAzNDIsMjEyIiBmaWxsPSJub25lIiBzdHJva2U9IiNDOUE4NEMiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgICA8dGV4dCB4PSIyMDAiIHk9IjI2OCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9Ikdlb3JnaWEsc2VyaWYiIGZvbnQtc3R5bGU9Iml0YWxpYyIgZm9udC13ZWlnaHQ9ImJvbGQiIGZvbnQtc2l6ZT0iNjAiIGZpbGw9IiNDOUE4NEMiIGxldHRlci1zcGFjaW5nPSIzIj5DcmVlazwvdGV4dD4KICAgIDxsaW5lIHgxPSIxMDAiIHkxPSIyODgiIHgyPSIzMDAiIHkyPSIyODgiIHN0cm9rZT0iI0M5QTg0QyIgc3Ryb2tlLXdpZHRoPSIwLjYiIG9wYWNpdHk9IjAuNCIvPgogICAgPHRleHQgeD0iMjAwIiB5PSIzMTAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCxzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmaWxsPSIjQzlBODRDIiBsZXR0ZXItc3BhY2luZz0iMy41IiBvcGFjaXR5PSIwLjkiPkhPTUVPV05FUlMgQVNTT0NJQVRJT048L3RleHQ+CiAgICA8dGV4dCB4PSIyMDAiIHk9IjMzMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTEiIGZpbGw9IiNDOUE4NEMiIGxldHRlci1zcGFjaW5nPSIzIiBvcGFjaXR5PSIwLjU1Ij5SSVZFUlZJRVcgwrcgRkw8L3RleHQ+CiAgICA8Y2lyY2xlIGN4PSI5NiIgY3k9IjMxOSIgcj0iMiIgZmlsbD0iI0M5QTg0QyIgb3BhY2l0eT0iMC40NSIvPgogICAgPGNpcmNsZSBjeD0iMzA0IiBjeT0iMzE5IiByPSIyIiBmaWxsPSIjQzlBODRDIiBvcGFjaXR5PSIwLjQ1Ii8+CiAgPC9nPgo8L3N2Zz4="/>
+</div>
+<div>
+<h1><span>Welcome to</span>Boyette Creek</h1>
+<div class="goldline"></div>
+<p class="sub">Your neighborhood quick-start guide:<br/>the rules, the contacts and the<br/>little things that make it home.</p>
+</div>
+<div class="foot">Riverview · Florida</div>
+</div></div>
+      <div class="face rev" data-label="Your home &amp; yard"><div class="panel w-std">
+<div class="band"><div class="k">Before you build, paint or plant</div><h2>Your home &amp; yard</h2></div>
+<div class="callout">
+<p><b>Ask first.</b> Any change to the outside of your home or lot needs <b>written approval from the Architectural Review Board (ARB)</b> before work starts. That includes paint, roof, fences, driveways, pools, landscaping beds, tree removal, shutters, generators and screen enclosures. Applications are on the HOA website and need a copy of your lot survey. The ARB responds in writing within 30 days.</p>
+<p class="cite" style="margin-top:.03in">Declaration Art. VII · ARB Planning Criteria</p>
+</div>
+<ul>
+<li><b>Paint:</b> repaint in your original builder color or choose from the ARB-approved palette. Anything else needs a color chip submitted for review.</li>
+<li><b>Lawns:</b> front and side yards stay fully sodded, mowed and edged. That includes the grass strip between the sidewalk and the street.</li>
+<li><b>Sidewalks:</b> each owner maintains and repairs the sidewalk along their lot.</li>
+<li><b>Driveways:</b> thinking about widening yours or adding pavers? Get ARB approval first. Any work between the sidewalk and the street also needs a Hillsborough County permit.</li>
+<li><b>Fences:</b> wood or wood-look PVC, with posts on the inside, and never in front of the house. ARB approval is required.</li>
+<li><b>Play sets and yard items</b> go in the back yard. Basketball hoops need ARB approval.</li>
+<li><b>Equipment</b> like pool pumps, softeners and tanks must be screened from the street with shrubs or approved fencing.</li>
+<li><b>Mailboxes:</b> classic black metal box with a red flag on a black post. The bottom of the box sits 39" above the ground.</li>
+</ul>
+<div class="spacer"></div>
+<p class="cite">Declaration Art. VIII &amp; IX §§16–17, 20 · Mailbox Standards</p>
+</div></div>
+    </div>
+  </div>
+</main>
+
+<nav class="ctl" aria-label="Pamphlet pages">
+  <button id="prev" aria-label="Previous">&larr;</button>
+  <div class="tabs" role="tablist">
+    <button data-s="closed">Cover</button>
+    <button data-s="open1">Welcome</button>
+    <button data-s="open2">Inside</button>
+    <button data-s="back">Who to call</button>
+  </div>
+  <button id="next" aria-label="Next">&rarr;</button>
+</nav>
+<p class="hint" id="hint">Tap the cover to open it. Tap any panel to read it larger.</p>
+
+<div id="zoom" role="dialog" aria-modal="true" aria-label="Enlarged panel">
+  <button class="x" id="zx">Close &times;</button>
+  <div class="wrap" id="zw"></div>
+</div>
+
+<script>
+(function(){
+  const ORDER=["closed","open1","open2","back"];
+  const HINTS={
+    closed:"Tap the cover to open it. Tap any panel to read it larger.",
+    open1:"Open the flap to see everything inside. Tap a panel to enlarge it.",
+    open2:"Tap any panel to read it larger.",
+    back:"The back panel: who to call and quick links."
+  };
+  const PIN=96, W=3.6875*PIN, H=8.5*PIN;
+  // [visible span left, right] in book units (base occupies 0..W)
+  const SPAN={closed:[0,W],open1:[-W,W],open2:[-W,2*W],back:[0,W]};
+  const body=document.body, book=document.getElementById("book"), stage=document.getElementById("stage");
+  let s="closed";
+  function layout(){
+    const [l,r]=SPAN[s], span=r-l;
+    const aw=stage.clientWidth-32, ah=stage.clientHeight-24;
+    const k=Math.max(.2,Math.min(aw/span, ah/H, 1.15));
+    const cx=(l+r)/2;  // center of visible span in book coords
+    const flip=s==="back"?" rotateY(180deg)":"";
+    book.style.transform=`translate(-50%,-50%) scale(${k}) translateX(${W/2-cx}px)${flip}`;
+  }
+  function go(n){
+    if(!ORDER.includes(n))return;
+    body.classList.remove("s-"+s); s=n; body.classList.add("s-"+s);
+    document.querySelectorAll(".tabs button").forEach(b=>b.setAttribute("aria-current",b.dataset.s===s));
+    const i=ORDER.indexOf(s);
+    document.getElementById("prev").disabled=i===0;
+    document.getElementById("next").disabled=i===ORDER.length-1;
+    document.getElementById("hint").textContent=HINTS[s];
+    layout();
+  }
+  const step=d=>go(ORDER[Math.min(ORDER.length-1,Math.max(0,ORDER.indexOf(s)+d))]);
+  document.getElementById("prev").onclick=()=>step(-1);
+  document.getElementById("next").onclick=()=>step(1);
+  document.querySelectorAll(".tabs button").forEach(b=>b.onclick=()=>go(b.dataset.s));
+
+  // zoom a panel
+  const zoom=document.getElementById("zoom"), zw=document.getElementById("zw");
+  function openZoom(face){
+    const p=face.querySelector(".panel").cloneNode(true);
+    const k=Math.min((window.innerWidth-32)/W, 1.9);
+    zw.innerHTML=""; zw.appendChild(p);
+    p.style.transform=`scale(${k})`;
+    zw.style.width=(W*k)+"px"; zw.style.height=(H*k)+"px";
+    zoom.classList.add("on"); zoom.scrollTop=0;
+    document.getElementById("zx").focus();
+  }
+  function closeZoom(){zoom.classList.remove("on")}
+  document.getElementById("zx").onclick=closeZoom;
+  zoom.addEventListener("click",e=>{if(e.target===zoom)closeZoom()});
+  document.querySelectorAll(".face").forEach(f=>f.addEventListener("click",e=>{
+    if(e.target.closest("a"))return;
+    if(s==="closed"){go("open1");return;}
+    openZoom(f);
+  }));
+
+  // keyboard + swipe
+  document.addEventListener("keydown",e=>{
+    if(zoom.classList.contains("on")){if(e.key==="Escape")closeZoom();return;}
+    if(e.key==="ArrowRight")step(1);
+    if(e.key==="ArrowLeft")step(-1);
+  });
+  let x0=null,y0=null;
+  stage.addEventListener("touchstart",e=>{x0=e.touches[0].clientX;y0=e.touches[0].clientY},{passive:true});
+  stage.addEventListener("touchend",e=>{
+    if(x0===null)return;
+    const dx=e.changedTouches[0].clientX-x0, dy=e.changedTouches[0].clientY-y0;
+    if(Math.abs(dx)>50&&Math.abs(dx)>Math.abs(dy))step(dx<0?1:-1);
+    x0=null;
+  });
+  window.addEventListener("resize",layout);
+  const h=location.hash.slice(1); go(ORDER.includes(h)?h:"closed");
+  window.addEventListener("hashchange",()=>go(location.hash.slice(1)));
+})();
+</script>
+</body>
+</html>
